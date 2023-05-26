@@ -14,27 +14,27 @@ function Header() {
             <img src={logo} alt="Woorise logo" />
           </Link>
         </div>
+        <button
+          className={styles.menuToogle}
+          aria-expanded={false}
+          aria-pressed={false}
+          role="button"
+          id="mobile-genesis-nav-primary"
+        ></button>
+        <nav
+          className={styles.navPrimary}
+          aria-label="Main navigation"
+          id="genesis-nav-primary"
+        >
+          <ul id="menu-main" className={styles.navMenu}>
+            {data.map((item) => (
+              <li key={item.id} id="menu-item-73" className={styles.menuItem}>
+                <Link to="#">{item.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <button
-        className={styles.menuToogle}
-        aria-expanded={false}
-        aria-pressed={false}
-        role="button"
-        id="mobile-genesis-nav-primary"
-      ></button>
-      <nav
-        className={styles.navPrimary}
-        aria-label="Main navigation"
-        id="genesis-nav-primary"
-      >
-        <ul id="menu-main" className={styles.navMenu}>
-          {data.map((item) => (
-            <li key={item.id} id="menu-item-73" className={styles.menuItem}>
-              <Link to="#">{item.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   );
 }

@@ -26,7 +26,15 @@
   height: auto;
 }
 
+.navPrimary {
+  width: 100%;
+  height: 15.25rem;
+  background-color: var(--wp--preset--color--white);
+}
+
 .navMenu {
+  width: 100%;
+  height: auto;
   background-color: var(--wp--preset--color--white);
   color: var(--wp--preset--color--dark-gray);
   line-height: 1.25rem;
@@ -34,6 +42,20 @@
   top: 0;
   z-index: 999;
   float: right;
-  margin: 0.9375rem 0 0;
-  padding: 0.9375rem 0.3125rem;
+  padding: 1.25rem 0;
+}
+
+.menuItem {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+.menuItem:last-child {
+  width: 7.75rem;
+  color: var(--wp-preset-color-luminous-vivid-dark-orange);
+  border: 2px solid var(--wp-preset-color-luminous-vivid-dark-orange);
+  border-radius: 2.6rem;
+  margin: 1.125rem auto;
 }
