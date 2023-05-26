@@ -1,5 +1,5 @@
-import Header from "../../components/header/Heder";
-import styles from "./assets/page/homePage.module.css";
+import Header from "../../components/header/Header";
+import styles from "./homePage.module.css";
 
 function HomePage() {
   return (

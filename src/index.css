@@ -14,6 +14,7 @@ Styles
 
 :root {
   --wp--preset--color--black: #000000;
+  --wp--preset--color--dark-gray: #667380;
   --wp--preset--color--cyan-bluish-gray: #abb8c3;
   --wp--preset--color--white: #ffffff;
   --wp--preset--color--pale-pink: #f78da7;
@@ -92,14 +93,7 @@ Styles
     rgb(2, 3, 129) 0%,
     rgb(40, 116, 252) 100%
   );
-  --wp--preset--duotone--dark-grayscale: url(#wp-duotone-dark-grayscale);
-  --wp--preset--duotone--grayscale: url(#wp-duotone-grayscale);
-  --wp--preset--duotone--purple-yellow: url(#wp-duotone-purple-yellow);
-  --wp--preset--duotone--blue-red: url(#wp-duotone-blue-red);
-  --wp--preset--duotone--midnight: url(#wp-duotone-midnight);
-  --wp--preset--duotone--magenta-yellow: url(#wp-duotone-magenta-yellow);
-  --wp--preset--duotone--purple-green: url(#wp-duotone-purple-green);
-  --wp--preset--duotone--blue-orange: url(#wp-duotone-blue-orange);
+
   --wp--preset--font-size--small: 13px;
   --wp--preset--font-size--medium: 20px;
   --wp--preset--font-size--large: 36px;
@@ -127,11 +121,19 @@ Global
   margin: 0;
 }
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+a {
+  color: var(--wp--preset--color--very-dark-gray);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -142,16 +144,6 @@ body {
   color: #2e3d4d;
   text-align: left;
   background-color: #fff;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 a {
