@@ -1,9 +1,18 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import logo from "../../assets/images/woorise-logo.svg";
 import menuToggleData from "../../assets/data/togleMenuData";
 import styles from "./header.module.css";
+
+ToggleBtn.propTypes = {
+  handleClick: PropTypes.bool,
+};
+
+Nav.propTypes = {
+  data: PropTypes.array,
+  navOpen: PropTypes.bool,
+};
 
 function Logo() {
   return (
@@ -29,7 +38,6 @@ function ToggleBtn({ handleClick }) {
   );
 }
 
-// eslint-disable-next-line react/prop-types
 function Nav({ data, navOpen }) {
   return (
     <nav className={styles.navContainer} aria-label="Main navigation">
