@@ -4,10 +4,12 @@ import styles from "./homePage.module.css";
 
 function HomePage() {
   return (
-    <main className={styles.siteContainer}>
+    <>
       <Header />
-      <HeroSection />
-    </main>
+      <div className={styles.siteInner}>
+        <HeroSection />
+      </div>
+    </>
   );
 }
 
