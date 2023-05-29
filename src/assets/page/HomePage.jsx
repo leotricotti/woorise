@@ -1,6 +1,7 @@
 import Header from "../../components/header/Header";
 import HeroSection from "../../components/heroSection/HeroSection";
 import ClientsSection from "../../components/clientsSection/ClientsSection";
+import BoxesSection from "../../components/boxesSection/BoxesSection";
 import styles from "./homePage.module.css";
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
       <main className={styles.siteInner}>
         <HeroSection />
         <ClientsSection />
+        <BoxesSection />
       </main>
     </>
   );

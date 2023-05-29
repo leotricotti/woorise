@@ -3,7 +3,7 @@ import styles from "./heroSection.module.css";
 
 function HeroSection() {
   return (
-    <div className={styles.heroSection}>
+    <section className={styles.heroSection}>
       <article className={styles.heroSection__container}>
         <div className={styles.inner__container}>
           <h1 className={styles.main__title}>
@@ -23,7 +23,7 @@ function HeroSection() {
           </Link>
         </div>
       </article>
-    </div>
+    </section>
   );
 }
 
