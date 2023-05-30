@@ -1,9 +1,9 @@
-import gift from "../images/box-section/gift-solid.svg";
-import brush from "../images/box-section/paintbrush-solid.svg";
-import list from "../images/box-section/rectangle-list-solid.svg";
-import star from "../images/box-section/star-solid.svg";
-import check from "../images/box-section/circle-check-solid.svg";
-import shoppingCart from "../images/box-section/cart-shopping-solid.svg";
+import gift from "../images/box-section/gift-solid.png";
+import brush from "../images/box-section/paintbrush-solid.png";
+import list from "../images/box-section/rectangle-list-solid.png";
+import star from "../images/box-section/star-solid.png";
+import check from "../images/box-section/circle-check-solid.png";
+import shoppingCart from "../images/box-section/cart-shopping-solid.png";
 
 const boxSectionData = [
   {
