@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   gap: 3.438rem;
+  position: relative;
+  z-index: -1;
 }
 
 .clientsSectionInner {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import logo from "../../assets/images/woorise-logo.svg";
@@ -6,12 +6,13 @@ import menuToggleData from "../../assets/data/togleMenuData";
 import styles from "./header.module.css";
 
 ToggleBtn.propTypes = {
-  handleClick: PropTypes.bool,
+  handleClick: PropTypes.func,
 };
 
 Nav.propTypes = {
   data: PropTypes.array,
   navOpen: PropTypes.bool,
+  scrollColor: PropTypes.bool,
 };
 
 function Logo() {
@@ -38,7 +39,7 @@ function ToggleBtn({ handleClick }) {
   );
 }
 
-function Nav({ data, navOpen }) {
+function Nav({ data, navOpen, scrollColor }) {
   return (
     <nav className={styles.navContainer} aria-label="Main navigation">
       <ul
@@ -46,7 +47,12 @@ function Nav({ data, navOpen }) {
         className={`${styles.navMenu} ${navOpen ? styles.navOpen : ""}`}
       >
         {data.map((item) => (
-          <li key={item.id} id="menu-item-73" className={styles.menuItem}>
+          <li
+            key={item.id}
+            className={`${styles.menuItem} ${
+              scrollColor === "100px" ? styles.buttonOrange : ""
+            }`}
+          >
             <Link to="#">{item.title}</Link>
           </li>
         ))}
@@ -58,6 +64,26 @@ function Nav({ data, navOpen }) {
 function Header() {
   const data = menuToggleData;
   const [navOpen, setNavOpen] = useState(false);
+  const [scrollColor, setScrollColor] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.pageYOffset;
+      const triggerHeight = 200;
+
+      if (scrollHeight > triggerHeight) {
+        setScrollColor(true);
+      } else {
+        setScrollColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
@@ -65,7 +91,7 @@ function Header() {
     >
       <Logo />
       <ToggleBtn handleClick={() => setNavOpen(!navOpen)} />
-      <Nav data={data} navOpen={navOpen} />
+      <Nav data={data} navOpen={navOpen} scrollColor={scrollColor} />
     </header>
   );
 }
