@@ -50,7 +50,7 @@ function Nav({ data, navOpen, scrollColor }) {
           <li
             key={item.id}
             className={`${styles.menuItem} ${
-              scrollColor === "100px" ? styles.buttonOrange : ""
+              scrollColor ? styles.isActive : ""
             }`}
           >
             <Link to="#">{item.title}</Link>
@@ -69,7 +69,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollHeight = window.pageYOffset;
-      const triggerHeight = 200;
+      const triggerHeight = 75;
 
       if (scrollHeight > triggerHeight) {
         setScrollColor(true);

@@ -75,6 +75,11 @@
   margin: 1.125rem auto;
 }
 
+.menuItem:last-child.isActive {
+  background-color: var(--wp-preset-color-luminous-vivid-dark-orange);
+  color: var(--wp--preset--color--white);
+}
+
 .menuItem:last-child:hover {
   background-color: var(--wp-preset-color-luminous-vivid-dark-orange);
   color: var(--wp--preset--color--white);
