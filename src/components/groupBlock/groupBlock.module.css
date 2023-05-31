@@ -38,3 +38,31 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.link {
+  color: var(--wp-preset-color-luminous-vivid-dark-orange);
+  border: 2px solid var(--wp-preset-color-luminous-vivid-dark-orange);
+  padding: 0.8125rem 1.75rem;
+  border-radius: 3.125rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.link::after {
+  content: ">";
+  font-size: 1.4rem;
+  color: var(--wp-preset-color-luminous-vivid-dark-orange);
+  margin-left: 0.625rem;
+  transition: all 0.3s ease-in;
+}
+
+.link:hover {
+  background-color: var(--wp-preset-color-luminous-vivid-dark-orange);
+  color: var(--wp--preset--color--white);
+}
+
+.link:hover::after {
+  color: var(--wp--preset--color--white);
+}
