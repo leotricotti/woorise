@@ -14,7 +14,7 @@ const groupBlockData = [
     title: "Create high-converting promotions & landing pages",
     description:
       "Build an unlimited number of interactive landing pages for giveaways & contests, forms, quizzes, surveys and more to connect with your customers. It takes just a few minutes to design beautiful landing pages that make people want to join your audience or buy your stuff.",
-    button: "Pick a Plan",
+    link: "Pick a Plan",
     url: "#",
   },
   {
@@ -24,7 +24,7 @@ const groupBlockData = [
     title: "Get a quick start with our templates",
     description:
       "Quickly & easily publish your first landing page in a matter of minutes. Start with a conversion-optimized, mobile-responsive template. Then customize it inside the Drag & Drop Builder, and launch a professional-looking promotion or landing page that’s designed to convert.",
-    button: "Explore Templates",
+    link: "Explore Templates",
     url: "https://woorise.com/pricing",
   },
   {
@@ -50,7 +50,7 @@ const groupBlockData = [
     title: "Collect online payments",
     description:
       "Create beautiful payment pages with Woorise. Customize backgrounds, tweak colors, add images and videos — make your landing page convert new customers and grow your business. Woorise integrates with Stripe, PayPal, Square and more, allowing you to easily and safely accept payments and recurring subscriptions in any currency.",
-    button: "Order & Payments",
+    link: "Order & Payments",
     url: "https://woorise.com/orders-payments",
   },
   {
@@ -68,7 +68,7 @@ const groupBlockData = [
     title: "",
     description:
       "Choose from a wide range of integrations including all major email marketing apps and automatically send your new leads to the tools you already use and love.",
-    button: "See all Integrations",
+    link: "See all Integrations",
     url: "https://woorise.com/integrations",
   },
 ];
