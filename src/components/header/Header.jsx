@@ -13,6 +13,7 @@ Nav.propTypes = {
   data: PropTypes.array,
   navOpen: PropTypes.bool,
   scrollColor: PropTypes.bool,
+  setNavOpen: PropTypes.func,
 };
 
 function Logo() {
@@ -39,7 +40,7 @@ function ToggleBtn({ handleClick }) {
   );
 }
 
-function Nav({ data, navOpen, scrollColor }) {
+function Nav({ data, navOpen, setNavOpen, scrollColor }) {
   return (
     <nav className={styles.navContainer} aria-label="Main navigation">
       <ul
@@ -53,7 +54,13 @@ function Nav({ data, navOpen, scrollColor }) {
               scrollColor ? styles.isActive : ""
             }`}
           >
-            <Link to="#">{item.title}</Link>
+            <Link
+              to={item.link}
+              target="_blank"
+              onClick={() => setNavOpen(false)}
+            >
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -91,7 +98,12 @@ function Header() {
     >
       <Logo />
       <ToggleBtn handleClick={() => setNavOpen(!navOpen)} />
-      <Nav data={data} navOpen={navOpen} scrollColor={scrollColor} />
+      <Nav
+        data={data}
+        navOpen={navOpen}
+        setNavOpen={setNavOpen}
+        scrollColor={scrollColor}
+      />
     </header>
   );
 }

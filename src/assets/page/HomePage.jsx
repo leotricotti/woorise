@@ -4,6 +4,7 @@ import ClientsSection from "../../components/clientsSection/ClientsSection";
 import BoxesSection from "../../components/boxesSection/BoxesSection";
 import GroupBlock from "../../components/groupBlock/GroupBlock";
 import Button from "../../components/button/Button";
+import heroSectionData from "../data/heroSectionData";
 import Testimonials from "../../components/testimonials/Testimonials";
 import boxSectionData from "../../assets/data/boxSectionData.js";
 import boxSectionTwoData from "../../assets/data/boxSectionTwoData";
@@ -16,7 +17,7 @@ function HomePage() {
     <>
       <Header />
       <main className={styles.siteInner}>
-        <HeroSection />
+        <HeroSection data={heroSectionData} />
         <ClientsSection />
         <BoxesSection data={boxSectionData} />
         <GroupBlock data={groupBlockData} />
