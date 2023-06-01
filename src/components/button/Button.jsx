@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 import styles from "./button.module.css";
 
 Button.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
 
 function Button({ data }) {
   return data.cards.map((item) =>
     item.linkUrl !== undefined ? (
-      <div className={styles.linkContainer} key={item.id}>
+      <button className={styles.linkContainer} key={item.id}>
         <Link to={item.linkUrl} className={styles.link}>
           {item.linkText}
         </Link>
-      </div>
+      </button>
     ) : null
   );
 }

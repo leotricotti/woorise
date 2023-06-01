@@ -1,4 +1,6 @@
 .linkContainer {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: -3rem;
   display: flex;

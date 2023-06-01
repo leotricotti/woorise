@@ -4,9 +4,11 @@ import ClientsSection from "../../components/clientsSection/ClientsSection";
 import BoxesSection from "../../components/boxesSection/BoxesSection";
 import GroupBlock from "../../components/groupBlock/GroupBlock";
 import Button from "../../components/button/Button";
+import Testimonials from "../../components/testimonials/Testimonials";
 import boxSectionData from "../../assets/data/boxSectionData.js";
 import boxSectionTwoData from "../../assets/data/boxSectionTwoData";
 import groupBlockData from "../../assets/data/groupBlockData";
+import testimonialsData from "../data/testimonialsData";
 import styles from "./homePage.module.css";
 
 function HomePage() {
@@ -20,6 +22,7 @@ function HomePage() {
         <GroupBlock data={groupBlockData} />
         <BoxesSection data={boxSectionTwoData} />
         <Button data={boxSectionTwoData} />
+        <Testimonials data={testimonialsData} />
       </main>
     </>
   );
