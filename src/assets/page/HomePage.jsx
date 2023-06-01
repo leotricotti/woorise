@@ -4,6 +4,7 @@ import ClientsSection from "../../components/clientsSection/ClientsSection";
 import BoxesSection from "../../components/boxesSection/BoxesSection";
 import GroupBlock from "../../components/groupBlock/GroupBlock";
 import boxSectionData from "../../assets/data/boxSectionData.js";
+import boxSectionTwoData from "../../assets/data/boxSectionTwoData";
 import groupBlockData from "../../assets/data/groupBlockData";
 import styles from "./homePage.module.css";
 
@@ -16,6 +17,7 @@ function HomePage() {
         <ClientsSection />
         <BoxesSection data={boxSectionData} />
         <GroupBlock data={groupBlockData} />
+        <BoxesSection data={boxSectionTwoData} />
       </main>
     </>
   );

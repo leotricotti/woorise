@@ -69,6 +69,8 @@ const boxSectionData = {
       alt: "Box Section logo icon",
       title: "Workspaces",
       text: "Create multiple workspaces (Sites) within the same Woorise account. A completely separate workspace for each brand or client to keep data from each site separate from one another.",
+      link: "See all Features",
+      linkUrl: "https://woorise.com/features",
     },
   ],
 };

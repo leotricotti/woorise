@@ -19,9 +19,15 @@ function BoxesSection({ data }) {
             <img src={item.url} alt={item.alt} />
             <h3 className={styles.boxTitle}>{item.title}</h3>
             <p className={styles.boxText}>{item.text}</p>
-            <Link to={"/"} target="_blank" className={styles.navLink}>
-              {item.link}
-            </Link>
+            {item.link !== undefined ? (
+              <Link
+                to={item.linkUrl}
+                target="_blank"
+                className={styles.navLink}
+              >
+                {item.link}
+              </Link>
+            ) : null}
           </div>
         ))}
       </div>
