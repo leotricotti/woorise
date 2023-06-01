@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import styles from "./button.module.css";
 
+Button.propTypes = {
+  data: PropTypes.object,
+};
+
 function Button({ data }) {
-  return data.map((item) => (
-    <div className={styles.linkContainer} key={item.id}>
-      {item.url !== undefined ? (
-        <Link to={item.url} className={styles.link}>
-          {item.link}
+  return data.cards.map((item) =>
+    item.linkUrl !== undefined ? (
+      <div className={styles.linkContainer} key={item.id}>
+        <Link to={item.linkUrl} className={styles.link}>
+          {item.linkText}
         </Link>
-      ) : null}
-    </div>
-  ));
+      </div>
+    ) : null
+  );
 }
 
 export default Button;
