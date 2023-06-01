@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import groupBlockData from "../../assets/data/groupBlockData.js";
+import PropTypes from "prop-types";
 import styles from "./groupBlock.module.css";
 
-function GroupBlock() {
-  const data = groupBlockData;
+GroupBlock.propTypes = {
+  data: PropTypes.object,
+};
 
+function GroupBlock({ data }) {
   return (
     <div>
       {data.map((item) => (

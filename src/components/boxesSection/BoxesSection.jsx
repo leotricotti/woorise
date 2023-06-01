@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import boxSectionData from "../../assets/data/boxSectionData";
 import styles from "./boxesSection.module.css";
 
 BoxesSection.propTypes = {
   data: PropTypes.object,
 };
 
-function BoxesSection() {
-  const data = boxSectionData;
-
+function BoxesSection({ data }) {
   return (
     <section className={styles.sectionBoxes}>
       <div className={styles.headingContainer} key={data.heading.id}>
