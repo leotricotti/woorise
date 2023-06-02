@@ -19,6 +19,7 @@ const boxSectionData = {
       title: "Giveaways & Contests",
       text: "Build powerful giveaways, contests and competitions. Collect entries and inspire your audience to engage with your goals.",
       link: "Giveaways & Contests",
+      linkUrl: "https://woorise.com/giveaways-contests",
     },
     {
       id: 2,
@@ -27,6 +28,7 @@ const boxSectionData = {
       title: "Landing Pages",
       text: "Create beautiful and high-converting landing pages without a developer. Start with an optimized and mobile-responsive template.",
       link: "Landing Pages",
+      linkUrl: "https://woorise.com/landing-pages",
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ const boxSectionData = {
       title: "Forms",
       text: "Build powerful online forms that you can use to collect data, sign ups, subscribers, do calculations and automate your workflows.",
       link: "Forms",
+      linkUrl: "https://woorise.com/forms",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ const boxSectionData = {
       title: "Surveys",
       text: "Create powerful online surveys that simply read your customer’s minds. Gain rich insights & make informed business decisions.",
       link: "Surveys",
+      linkUrl: "https://woorise.com/surveys",
     },
     {
       id: 5,
@@ -51,6 +55,7 @@ const boxSectionData = {
       title: "Quizzes",
       text: "Create stunning & high performing quizzes with a top notch quiz maker. Make quizzes that people love to share and engage your audience.",
       link: "Quizzes",
+      linkUrl: "https://woorise.com/quizzes",
     },
     {
       id: 6,
@@ -59,6 +64,7 @@ const boxSectionData = {
       title: "Orders & Payments",
       text: "Easily and securely collect payments & subscriptions, create checkout pages, sell products or accept online donations.",
       link: "Orders & Payments",
+      linkUrl: "https://woorise.com/orders-payments",
     },
   ],
 };
