@@ -1,9 +1,4 @@
-import PropTypes from "prop-types";
-import styles from "./testimonial.module.css";
-
-Testimonials.propTypes = {
-  data: PropTypes.array,
-};
+import styles from "./testimonials.module.css";
 
 function Testimonials({ data }) {
   return data.map((item) => {
@@ -16,6 +11,7 @@ function Testimonials({ data }) {
         <span className={styles.title}>{item.title}</span>
       </div>
     </section>;
+    <h1>data</h1>;
   });
 }
 

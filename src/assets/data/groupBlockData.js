@@ -15,7 +15,7 @@ const groupBlockData = [
     description:
       "Build an unlimited number of interactive landing pages for giveaways & contests, forms, quizzes, surveys and more to connect with your customers. It takes just a few minutes to design beautiful landing pages that make people want to join your audience or buy your stuff.",
     link: "Pick a Plan",
-    url: "#",
+    url: "https://woorise.com/pricing",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const groupBlockData = [
     description:
       "Quickly & easily publish your first landing page in a matter of minutes. Start with a conversion-optimized, mobile-responsive template. Then customize it inside the Drag & Drop Builder, and launch a professional-looking promotion or landing page that’s designed to convert.",
     link: "Explore Templates",
-    url: "https://woorise.com/pricing",
+    url: "https://woorise.com/templates",
   },
   {
     id: 3,
