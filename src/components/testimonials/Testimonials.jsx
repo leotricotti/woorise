@@ -1,18 +1,44 @@
+import PropsTypes from "prop-types";
 import styles from "./testimonials.module.css";
 
+Testimonials.propTypes = {
+  data: PropsTypes.object,
+};
+
 function Testimonials({ data }) {
-  return data.map((item) => {
+  return (
     <section className={styles.testimonialsContainer}>
-      <img src={item.stars} alt="Opinion value" />
-      <p className={styles.quote}>{item.quote}</p>
-      <div className={styles.autorContainer}>
-        <img src={item.img} alt="Autor avatar" />
-        <span className={styles.autorName}>{item.autor}</span>
-        <span className={styles.title}>{item.title}</span>
+      <div className={styles.innerContainer}>
+        <h2 className={styles.title}>{data.title}</h2>
+        {data.cards.map((item) => (
+          <div className={styles.testimonial} key={item.id}>
+            <img
+              src={item.stars}
+              alt="Opinion value"
+              className={styles.stars}
+            />
+            <p className={styles.quote}>{item.quote}</p>
+            <div className={styles.authorContainer}>
+              <img
+                src={item.img}
+                alt="Author avatar"
+                className={styles.avatar}
+              />
+              <span className={styles.name}>{item.author}</span>
+              <span className={styles.authorTitle}>{item.title}</span>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>;
-    <h1>data</h1>;
-  });
+      <div className={styles.review}>
+        {data.review.map((item) => (
+          <div className={styles.reviewContainer} key={item.id}>
+            <img src={item.img} alt="Reviewer logo" />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Testimonials;

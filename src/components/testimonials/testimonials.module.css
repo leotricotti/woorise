@@ -1,0 +1,97 @@
+.testimonialsContainer {
+  width: 100%;
+  height: auto;
+  background-color: var(--wp--preset--bg--color--clients-section);
+  padding: 3.75rem 5% 2.5rem;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3.125rem 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 0 0.625rem;
+}
+
+.testimonial {
+  width: 100%;
+  height: auto;
+  background-color: var(--wp--preset--color--white);
+  border-radius: 0.3125rem;
+  box-shadow: 0 5px 50px 0 rgba(44, 62, 80, 0.1);
+  padding: 1.25rem;
+}
+
+.stars {
+  width: 7rem;
+  height: 1.22rem;
+  margin: 0 0 1.25rem;
+}
+
+.quote {
+  color: var(--wp--preset--color--box-section-text);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+
+.authorContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  gap: 0.3rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.name,
+.authorTitle {
+  color: var(--wp--preset--color--box-section-text);
+  font-size: 0.75rem;
+}
+
+.authorTitle {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 2.75rem;
+  opacity: 0.4;
+  font-weight: 400;
+}
+
+.review {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.reviewContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.125rem;
+}
+
+.reviewContainer img {
+  width: 9.4rem;
+  height: auto;
+}
