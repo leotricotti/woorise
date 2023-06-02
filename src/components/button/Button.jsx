@@ -1,10 +1,5 @@
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import styles from "./button.module.css";
-
-Button.propTypes = {
-  data: PropTypes.array,
-};
 
 function Button({ data }) {
   return data.cards.map((item) =>
