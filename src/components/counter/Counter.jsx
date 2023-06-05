@@ -7,13 +7,15 @@ function Counter() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
-    }, 70);
+    }, 50);
     return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className={styles.counter}>
-      <div className={styles.counterInnerItem}>{counter}</div>
+      <div className={styles.counterInner}>
+        <div className={styles.counterInnerItem}>{counter}</div>
+      </div>
     </div>
   );
 }

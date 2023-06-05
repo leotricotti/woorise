@@ -37,6 +37,11 @@ Styles
     #20bdff,
     #a5fecb
   );
+  --wp--preset--gradient--counter-item: linear-gradient(
+    to top left,
+    #ff004b 0%,
+    #ff9500 100%
+  );
 }
 
 /*
